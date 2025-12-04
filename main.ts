@@ -1,0 +1,8 @@
+const btn = document.getElementById("btn") as HTMLButtonElement;
+const output = document.getElementById("output") as HTMLParagraphElement;
+
+btn.addEventListener("click", () => {
+  const message = "You clicked the button! 🎉";
+  output.textContent = message;
+  console.log(message);
+});
