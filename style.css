@@ -1,22 +1,77 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 40px;
-  background: #f7f7f7;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    background: #fafafa;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 25px;
 }
 
-h1 {
-  color: #333;
+.tvicon{
+    width: 25px;
+    height: 25px;
 }
 
-button {
-  padding: 10px 16px;
-  background: #0078ff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+.icon.plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: none;
+    color: black;
+    border: 2px solid #000;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+.main {
+    margin-left: 60px;
+    padding: 20px;
+}
+.search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    bottom: 100px;
 }
 
-button:hover {
-  background: #005fcc;
+.search-bar input {
+    width: 60%;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: #e7e7e7;
+}
+.search-bar img {
+    width: 25px;
+    height: 25px;
+    right: 150px;
+}
+
+.content-block {
+    width: 970px;
+    height: 1000px;
+    background: #dcdcdc;
+    border: 1px solid #c1c1c1;
+    border-radius: 6px;
+    position: absolute;
+    left: 25%;
+}
+.settingsicon {
+    height: 25px;
+    width: 25px;
+    bottom: 0;
 }
